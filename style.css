@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'norsebold';
+  src: url('norse-bold-webfont.woff2') format('woff2'),
+       url('norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-container {
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background-image: url('ferns_washington.jpg');
+  background-size: cover;
+  min-width: 35%;
+}
+
+.sidebar-logo {
+  font-family: norsebold;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 20%;
+  padding: 15px 0;
+}
+
+.sidebar-logo > img {
+  width: 80px;
+}
+
+.credit {
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.credit a:link,
+.credit a:visited,
+.credit a:active {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main > div {
+  padding: 30px;
+}
+
+.description {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.sign-up {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.sign-up-caption {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.sign-up-form label {
+  display: block;
+}
+
+.sign-up-form > div {
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sign-up-form > div > label {
+  font-size: 0.8rem;
+  margin: 1px;
+  font-weight: bold;
+  color: rgb(88, 88, 88);
+}
+
+.sign-up-form > div > input {
+  padding: 4px;
+  width: 250px;
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+}
+
+.sign-up-form > div > input:invalid:focus {
+  outline: 1px solid red;
+}
+
+.sign-up-form > div > input:focus-visible {
+  outline: 1px solid blue;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+input[type="submit"] {
+  background-color: #596D48;
+  color: white;
+  padding: 15px 50px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+  cursor: pointer;
+}
+
+.log-in:visited,
+.log-in:link,
+.log-in:active {
+  color: rgb(74, 90, 63);
+  text-decoration: none;
+}
+
+input[name=password] {
+  position: relative;
+}
+
+.error {
+  outline: 1px solid red;
+}
